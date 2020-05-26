@@ -2,7 +2,7 @@ import urllib.request
 import json
 from tkinter import *
 root=Tk()
-url="http://api.openweathermap.org/data/2.5/forecast?q="+str(input("enter city"))+"&appid=de6ef50b9b73ae0a6961a9086b2cfd6a"
+url="http://api.openweathermap.org/data/2.5/forecast?q="+str(input("enter city"))+"&appid=yourappid"
 response=urllib.request.urlopen(url)
 data=response.read()
 js=json.loads(data)
